@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mudawwar - Marketplace</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#38e07b",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#122017",
+                        "foreground-light": "#122017",
+                        "foreground-dark": "#f6f8f7",
+                        "subtle-light": "#e5e7eb",
+                        "subtle-dark": "#2c3931",
+                        "muted-light": "#6b7280",
+                        "muted-dark": "#9ca3af",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="text-foreground-light dark:text-foreground-dark">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold text-center flex-1 text-foreground-light dark:text-foreground-dark">Marketplace</h1>
+<div class="w-8"></div>
+</div>
+<div class="px-4 pb-4">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-muted-light dark:text-muted-dark">search</span>
+<input class="w-full pl-10 pr-4 py-2 rounded-lg bg-subtle-light dark:bg-subtle-dark text-foreground-light dark:text-foreground-dark placeholder-muted-light dark:placeholder-muted-dark border-none focus:ring-2 focus:ring-primary" placeholder="Search for waste" type="text"/>
+</div>
+</div>
+<div class="px-4 pb-4 overflow-x-auto">
+<div class="flex space-x-2">
+<button class="flex items-center space-x-1 px-4 py-2 rounded-full text-sm font-medium bg-primary/20 dark:bg-primary/30 text-foreground-light dark:text-foreground-dark">
+<span>Waste Type</span>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+<button class="flex items-center space-x-1 px-4 py-2 rounded-full text-sm font-medium bg-subtle-light dark:bg-subtle-dark text-foreground-light dark:text-foreground-dark">
+<span>Quantity</span>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+<button class="flex items-center space-x-1 px-4 py-2 rounded-full text-sm font-medium bg-subtle-light dark:bg-subtle-dark text-foreground-light dark:text-foreground-dark">
+<span>Location</span>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+<button class="flex items-center space-x-1 px-4 py-2 rounded-full text-sm font-medium bg-subtle-light dark:bg-subtle-dark text-foreground-light dark:text-foreground-dark">
+<span>Price Range</span>
+<span class="material-symbols-outlined text-base">expand_more</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 px-4 py-2">
+<h2 class="text-lg font-bold mb-4 text-foreground-light dark:text-foreground-dark">Available Listings</h2>
+<div class="space-y-4">
+<div class="flex items-center space-x-4 p-3 rounded-xl bg-subtle-light/50 dark:bg-subtle-dark/50">
+<div class="w-24 h-24 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDElnU67jYFp_3e5TmPwLiopcrVkSs5AAW15MzJnzBOQ0d1pcPi1YKqqMdNKat66L7g-WLNYqyxuHbAVwN1PBXhdun3-euvaJb4RDE2RO3motC8PJ4RznEjALhdkWz-wwAh1WJnd3xZ5lKf65ynTgHUq0UhORXJ1FXUM3DaHZTgWS9oekNEkEVj2T8Ix-k-XlQuF-Pc51SQ_f8dF89CGVsHHTiq4fuBTdEbf9CELor-bgAD0UDXAeqoat0GkQYOb9SZA6TbvPD9");'></div>
+<div class="flex-1">
+<p class="text-sm font-medium text-primary">Plastic</p>
+<h3 class="font-bold text-base text-foreground-light dark:text-foreground-dark">PET Bottles</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">500 kg | Amman</p>
+</div>
+</div>
+<div class="flex items-center space-x-4 p-3 rounded-xl bg-subtle-light/50 dark:bg-subtle-dark/50">
+<div class="w-24 h-24 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCrwyB8UZ4CKWmah1N6rFZ0bgfM0oOSq1WmF2RK-z_LtzAZjjqaYWfsSRKuG8fpLaUpUcyRvdy551t144wudoMX0XLeRYAUByqHVIhljn0OZFk2GJ2FEA6YbFjTdoQvKHJH9uIoc7pXc6vbD5tK29hGrhfCSON05ft_NLXRBpanWN5fHlcpRL8kAptqUe_U3z6nn1xVvGe0noDjv8_c-V1W6c_u2ocrnoP83OrAQwo5NXQC4VwdoKbIj7JSg5B-pdgppiVx_Z28");'></div>
+<div class="flex-1">
+<p class="text-sm font-medium text-primary">Paper</p>
+<h3 class="font-bold text-base text-foreground-light dark:text-foreground-dark">Cardboard Boxes</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">1000 kg | Irbid</p>
+</div>
+</div>
+<div class="flex items-center space-x-4 p-3 rounded-xl bg-subtle-light/50 dark:bg-subtle-dark/50">
+<div class="w-24 h-24 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAFHya1OH9FC66X_5AGa-4yYGukAYSNt4Pi6eXrNj_C3cBmROFO4c46y8Yca5eS1gUwEIIsyNgJ28_ZODvckDELsxxXzzHapnTKMIN7wWK2pgOGEv7XNdgNPMaEzL45sKoYKWEW-ayaXMdFV_jUb9Qp42qOcJE2J5Ma6uZPEdrc_NA9zQQ3TJDvt-to0PR8ZyJD0cwoSL9uphZVgJbfaspCpOgoYD4rUPhbiRn5uwXfqnjC6oQtD_35Oy1JtJSIzm2nPXidQtaM");'></div>
+<div class="flex-1">
+<p class="text-sm font-medium text-primary">Metal</p>
+<h3 class="font-bold text-base text-foreground-light dark:text-foreground-dark">Aluminum Cans</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">200 kg | Zarqa</p>
+</div>
+</div>
+<div class="flex items-center space-x-4 p-3 rounded-xl bg-subtle-light/50 dark:bg-subtle-dark/50">
+<div class="w-24 h-24 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuApbCviL-CblfTZ9Zuu3ZZ9jyzNS6q-P6fXothONutH8VBVGmHCXQsgsstm4W9eiZmZPs8ZfT-zVGVzva3htXO8TrMY14Lm7WY2PqIMXRJFVLDSitoX00t05qFOZ6By1p-VBx4msMrn3zIlk3z3YolRShisn5RhdTGNyrNUFp_VTrzfTnDh7qqeWQd1ZO8Kz4cLe-od99AeavbzSWnY-YpzoDyH-wehgmNReTv0RIR5Wed9lZKaaF5JOhI8nAdRnvjmd_OJMSiU");'></div>
+<div class="flex-1">
+<p class="text-sm font-medium text-primary">Glass</p>
+<h3 class="font-bold text-base text-foreground-light dark:text-foreground-dark">Glass Bottles</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">300 kg | Aqaba</p>
+</div>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-subtle-light dark:border-subtle-dark">
+<nav class="flex justify-around items-center h-16">
+<a class="flex flex-col items-center justify-center text-muted-light dark:text-muted-dark" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-muted-light dark:text-muted-dark" href="#">
+<span class="material-symbols-outlined">design_services</span>
+<span class="text-xs">Services</span>
+</a>
+<a class="flex flex-col items-center justify-center text-primary dark:text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">storefront</span>
+<span class="text-xs font-bold">Marketplace</span>
+</a>
+<a class="flex flex-col items-center justify-center text-muted-light dark:text-muted-dark" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

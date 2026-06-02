@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mudawwar - Create Listing</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#38e07b",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#122017",
+                        "text-light": "#0e1a13",
+                        "text-dark": "#f6f8f7",
+                        "subtle-light": "#e8f2ec",
+                        "subtle-dark": "#213428",
+                        "placeholder-light": "#51946c",
+                        "placeholder-dark": "#89c19f",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .form-input, .form-textarea, .form-select {
+            --tw-ring-color: transparent !important;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="max-w-md mx-auto">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm p-4">
+<div class="relative flex items-center justify-center">
+<button class="absolute left-0 text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined">close</span>
+</button>
+<h1 class="text-lg font-bold">Create Listing</h1>
+</div>
+</header>
+<main class="p-4 space-y-6 pb-24">
+<div>
+<label class="block text-sm font-medium mb-1.5" for="title">Title</label>
+<input class="w-full h-12 px-4 rounded-lg bg-subtle-light dark:bg-subtle-dark border-none placeholder-placeholder-light dark:placeholder-placeholder-dark text-text-light dark:text-text-dark focus:ring-2 focus:ring-primary" id="title" placeholder="e.g., Scrap Metal for Recycling" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium mb-1.5" for="description">Description</label>
+<textarea class="w-full p-4 rounded-lg bg-subtle-light dark:bg-subtle-dark border-none placeholder-placeholder-light dark:placeholder-placeholder-dark text-text-light dark:text-text-dark focus:ring-2 focus:ring-primary" id="description" placeholder="Provide detailed information about the waste, its condition, and any specific requirements." rows="4"></textarea>
+</div>
+<div>
+<h2 class="text-sm font-medium mb-1.5">Images</h2>
+<div class="grid grid-cols-3 gap-2">
+<div class="relative aspect-square rounded-lg bg-subtle-light dark:bg-subtle-dark flex items-center justify-center">
+<div class="h-full w-full bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAxi0aeBVj6T_x4-eSqk4IBHVsQXrCxDderLl7lQ7vpk0-TWTFBeusQwBs8Gw1pc6tVClaaO09pD23tpdfD2Y7VPWLGdvQ0Pr4ctK22sffr9ZNYWioNJxeukOwGBjR-C-_BI6TD9wY7BPbTclFuJ-3aArWfaUYZ1MOvEaM3RBcmRXX8a8_B3PyfgJ2RT4iOn4DYNMobbmanZZPlkC8oaJRzbd91w8tc0ckC4YI0r7DtsUVLF3mb5D5dct4wtrgGBYWrPxosFQBr");'></div>
+</div>
+<div class="relative aspect-square rounded-lg bg-subtle-light dark:bg-subtle-dark flex items-center justify-center">
+<div class="h-full w-full bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBSMhThJ7YpEivSmZpn1UQ8lMkCbm_CyCZ9E5EarkUZyLcqgS1XrpCxwAISo7mX_l6RxevhnHdA9N1iQsjD6FSECzAAf9RbqU_l5FGaPs4-WXFkIAM92wGTQKftciVj_QejpZEuKFMLQn1nPj8R_j867-uu-Z2lmsdnz6LjZvUaIKWNiZLbdGImErVQh_1gq5pTZAqHrvuqxjt40dZNYhEx6ATec540yHpMx0MYAjH8NJJ4iZV-h9QoRlGvk4Gk3ZNvrP4ZiuYf");'></div>
+</div>
+<div class="relative aspect-square rounded-lg bg-primary/20 flex items-center justify-center text-primary cursor-pointer">
+<span class="material-symbols-outlined">add_a_photo</span>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="block text-sm font-medium mb-1.5" for="quantity">Quantity (kg)</label>
+<input class="w-full h-12 px-4 rounded-lg bg-subtle-light dark:bg-subtle-dark border-none placeholder-placeholder-light dark:placeholder-placeholder-dark text-text-light dark:text-text-dark focus:ring-2 focus:ring-primary" id="quantity" placeholder="e.g. 500" type="number"/>
+</div>
+<div>
+<label class="block text-sm font-medium mb-1.5" for="price">Price (JOD/kg)</label>
+<input class="w-full h-12 px-4 rounded-lg bg-subtle-light dark:bg-subtle-dark border-none placeholder-placeholder-light dark:placeholder-placeholder-dark text-text-light dark:text-text-dark focus:ring-2 focus:ring-primary" id="price" placeholder="e.g. 0.25" type="number"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium mb-1.5" for="category">Category</label>
+<select class="w-full h-12 px-4 rounded-lg bg-subtle-light dark:bg-subtle-dark border-none text-text-light dark:text-text-dark focus:ring-2 focus:ring-primary appearance-none bg-no-repeat bg-right_center" id="category" style="background-image: url('data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 fill=%27none%27 viewBox=%270 0 20 20%27%3e%3cpath stroke=%27%2351946c%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%271.5%27 d=%27M6 8l4 4 4-4%27/%3e%3c/svg%3e'); background-position: right 0.75rem center;">
+<option class="text-placeholder-light dark:text-placeholder-dark">Select waste category</option>
+<option value="scrap-metal">Scrap Metal</option>
+<option value="pet-plastic">PET Plastic</option>
+<option value="cardboard">Cardboard</option>
+</select>
+</div>
+</main>
+<footer class="fixed bottom-0 left-0 right-0 p-4 max-w-md mx-auto bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<button class="w-full h-12 px-5 rounded-lg bg-primary text-black font-bold text-base">
+                Create Listing
+            </button>
+</footer>
+</div>
+
+</body></html>

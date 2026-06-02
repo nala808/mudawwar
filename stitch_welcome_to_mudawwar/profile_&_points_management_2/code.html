@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mudawwar - Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#38e07b",
+            "background-light": "#f6f8f7",
+            "background-dark": "#122017",
+            "text-light": "#0e1a13",
+            "text-dark": "#e8f2ec",
+            "subtext-light": "#51946c",
+            "subtext-dark": "#a3d3b8",
+            "border-light": "#d1e6d9",
+            "border-dark": "#3a4a40",
+            "card-light": "#ffffff",
+            "card-dark": "#1a2c21"
+          },
+          fontFamily: {
+            "display": ["Manrope", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="max-w-md mx-auto">
+<header class="flex items-center p-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<button class="p-2 -ml-2">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold text-center flex-1 pr-8">Profile</h1>
+</header>
+<main class="p-4 space-y-8 pb-32">
+<section class="flex flex-col items-center space-y-4">
+<div class="relative">
+<img alt="Layla Al-Masri" class="w-32 h-32 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-tSaU2IvjgH_-M5YSNMLXeQTbbh1ZYl6D3ZodHnp84t8egyaKLqUm4j3PAJV8CA8zMNxY2nySNRdgcgLScdXUVK3CXXOyAadg17SZpUYZHpegPv1gO5HfRVFyXYxY0EHD1JaelN4Cx15DO9-ZDhtyE-D2VVOixVObDLHZIhFXGR7PFVKb49DE33rifBIhHl84g2KwLu79gCCtc2YIaQIZ1Ra3kX_mc_nByu6Q28fQ1cfrXsjoWUrYH83cFb4lTQReSr0BPBGg"/>
+<button class="absolute bottom-0 right-0 bg-primary text-white rounded-full p-2">
+<span class="material-symbols-outlined text-base">edit</span>
+</button>
+</div>
+<div class="text-center">
+<p class="text-2xl font-bold">Layla Al-Masri</p>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Member since 2022</p>
+</div>
+</section>
+<section class="space-y-6">
+<h2 class="text-lg font-bold">Personal Information</h2>
+<form class="space-y-4">
+<div>
+<label class="text-sm font-medium text-subtext-light dark:text-subtext-dark" for="name">Name</label>
+<input class="w-full mt-1 p-3 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg focus:ring-primary focus:border-primary placeholder-subtext-light dark:placeholder-subtext-dark" id="name" type="text" value="Layla Al-Masri"/>
+</div>
+<div>
+<label class="text-sm font-medium text-subtext-light dark:text-subtext-dark" for="email">Email</label>
+<input class="w-full mt-1 p-3 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg focus:ring-primary focus:border-primary placeholder-subtext-light dark:placeholder-subtext-dark" id="email" type="email" value="layla.m@example.com"/>
+</div>
+<div>
+<label class="text-sm font-medium text-subtext-light dark:text-subtext-dark" for="phone">Phone</label>
+<input class="w-full mt-1 p-3 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg focus:ring-primary focus:border-primary placeholder-subtext-light dark:placeholder-subtext-dark" id="phone" type="tel" value="+962 7 9123 4567"/>
+</div>
+<div>
+<label class="text-sm font-medium text-subtext-light dark:text-subtext-dark" for="address">Company Address</label>
+<input class="w-full mt-1 p-3 bg-card-light dark:bg-card-dark border border-border-light dark:border-border-dark rounded-lg focus:ring-primary focus:border-primary placeholder-subtext-light dark:placeholder-subtext-dark" id="address" type="text" value="Amman, Jordan"/>
+</div>
+<button class="w-full bg-primary text-background-dark font-bold py-3 px-4 rounded-lg hover:bg-primary/90 transition-colors" type="submit">Save Changes</button>
+</form>
+</section>
+<section class="space-y-6">
+<h2 class="text-lg font-bold">Mudawwar Points Dashboard</h2>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-sm">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Current Points</p>
+<p class="text-4xl font-bold text-primary">1,250</p>
+</div>
+<span class="material-symbols-outlined text-primary text-3xl">workspace_premium</span>
+</div>
+<div class="mt-6">
+<div class="flex justify-between text-sm font-medium">
+<p>Next Reward</p>
+<p class="text-subtext-light dark:text-subtext-dark">600 pts to go</p>
+</div>
+<div class="w-full bg-border-light dark:bg-border-dark rounded-full h-2 mt-2">
+<div class="bg-primary h-2 rounded-full" style="width: 62.5%"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<h2 class="text-lg font-bold">Redeemable Rewards</h2>
+<div class="flex space-x-4 overflow-x-auto pb-2 -mx-4 px-4">
+<div class="flex-shrink-0 w-48 space-y-2">
+<img alt="Recycling Service Discount" class="w-full h-32 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8S9F-37e-6xALpj1vo4K1e2ty-n7M8up3BG2rDMRC1fbWqZnS7BswnTYRRJLz3kwJdkWUF6osa6rDoIWy6kCCAzQ4arEqPGPsoT53CNaAtms-lMgnvRCCXxtF3wSSQDQYFcXP3c6tKSgzbr8HFX4ZQLmbPrOjSr9GtDckIcikvrR_yFY_hH7BGoJ8nVkRBEh0Zu1dNkMWxMfPnKjfUq_Ms26a9aIUtsXTD1bxrbE5BFHsp4ewXHYlk3X-9tpgNRA-xbhfDyhW"/>
+<p class="font-semibold">Recycling Discount</p>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Redeem for 500 pts</p>
+</div>
+<div class="flex-shrink-0 w-48 space-y-2">
+<img alt="Collection Service Discount" class="w-full h-32 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcW0Zbvv3c92JwsSiguc1dQlt84251kv4nDWOMZDyo5ud74XUAWzpXJyj-zDA_cwl3mqUSpoOWX_vrh9fZcZSt9AY4phNjF5wtHFnqA8-fJjJj3eV3q6ouPTGt7qaDAVXQxLcD73xXPBTua7BC3naaoA8Ynz2Rzed_PetYHn27eQqUM3xyJ3QdOds1XMD8QYmXgcOJczRrWr2HhhknU4v0lP4YtyhsRiA1zoDaFqjD60azBljqNvngGAs27VyCrUgObNoOZnOj"/>
+<p class="font-semibold">Collection Discount</p>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Redeem for 750 pts</p>
+</div>
+<div class="flex-shrink-0 w-48 space-y-2">
+<img alt="Product Discount" class="w-full h-32 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEpdhYe8lS7N9ztFOOGS06aquHcuEIY9aZsi9C5dr0uhfurJXT-rA4krRXqQ-IoQJBYglvsljXKnGlywZ-OGtHeLJxKvRf-E5lShtFqz_KNDNIgfRNm-fcOPK0sR3wuTJjkE7rotIc6-gk5Aoldxn1uVd9BCE3OqQMnXkQ2FrVZo1RjkrLT44H3gx5vKu8fRBzF_wc3F4RepfR9f1G-GlbfSg91SJRl3gKgM5MH10w3GuvZKtiWGRDFSPdSdf4gDlsCm8eChnb"/>
+<p class="font-semibold">Product Discount</p>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Redeem for 1000 pts</p>
+</div>
+</div>
+</section>
+<section class="space-y-2">
+<h2 class="text-lg font-bold">Points History</h2>
+<div class="divide-y divide-border-light dark:divide-border-dark">
+<div class="flex items-center justify-between py-4">
+<div>
+<p class="font-medium">Plastic Sale</p>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Oct 24, 2023</p>
+</div>
+<p class="font-medium text-primary">+50</p>
+</div>
+<div class="flex items-center justify-between py-4">
+<div>
+<p class="font-medium">Collection Service Discount</p>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Oct 15, 2023</p>
+</div>
+<p class="font-medium text-red-500">-200</p>
+</div>
+<div class="flex items-center justify-between py-4">
+<div>
+<p class="font-medium">Paper Recycling</p>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">Oct 10, 2023</p>
+</div>
+<p class="font-medium text-primary">+75</p>
+</div>
+</div>
+<button class="w-full text-primary font-bold py-2">View all</button>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark">
+<div class="flex justify-around items-center px-4 py-2">
+<a class="flex flex-col items-center gap-1 text-subtext-light dark:text-subtext-dark" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-subtext-light dark:text-subtext-dark" href="#">
+<span class="material-symbols-outlined">recycling</span>
+<span class="text-xs">Services</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-subtext-light dark:text-subtext-dark" href="#">
+<span class="material-symbols-outlined">storefront</span>
+<span class="text-xs">Market</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">person</span>
+<span class="text-xs font-bold">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

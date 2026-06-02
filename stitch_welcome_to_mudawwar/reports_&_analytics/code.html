@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope:wght@400;500;700;800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#20df6c",
+              "background-light": "#f6f8f7",
+              "background-dark": "#112117",
+            },
+            fontFamily: {
+              "display": ["Manrope"],
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+          },
+        },
+      };
+    </script>
+<title>Mudawwar Dashboard</title>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="text-black dark:text-white">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-black dark:text-white pr-6">Dashboard</h1>
+</div>
+</header>
+<main class="flex-1 overflow-y-auto p-4 space-y-8">
+<section>
+<h2 class="text-xl font-bold text-black dark:text-white mb-4">Environmental Impact</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-lg">
+<p class="text-sm font-medium text-black/70 dark:text-white/70">Total Waste Diverted</p>
+<p class="text-3xl font-bold text-black dark:text-white mt-1">1,200 kg</p>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-lg">
+<p class="text-sm font-medium text-black/70 dark:text-white/70">Carbon Emissions Avoided</p>
+<p class="text-3xl font-bold text-black dark:text-white mt-1">300 kg</p>
+</div>
+</div>
+<div class="mt-6 bg-primary/10 dark:bg-primary/20 p-4 rounded-lg">
+<p class="text-sm font-medium text-black/70 dark:text-white/70 mb-4">Monthly Waste Diverted</p>
+<div class="grid grid-flow-col gap-4 items-end h-40 justify-items-center">
+<div class="flex flex-col items-center w-full gap-2">
+<div class="bg-primary/30 dark:bg-primary/50 rounded w-full" style="height: 10%;"></div>
+<p class="text-xs font-bold text-black/50 dark:text-white/50">Jan</p>
+</div>
+<div class="flex flex-col items-center w-full gap-2">
+<div class="bg-primary/30 dark:bg-primary/50 rounded w-full" style="height: 90%;"></div>
+<p class="text-xs font-bold text-black/50 dark:text-white/50">Feb</p>
+</div>
+<div class="flex flex-col items-center w-full gap-2">
+<div class="bg-primary/30 dark:bg-primary/50 rounded w-full" style="height: 60%;"></div>
+<p class="text-xs font-bold text-black/50 dark:text-white/50">Mar</p>
+</div>
+<div class="flex flex-col items-center w-full gap-2">
+<div class="bg-primary rounded w-full" style="height: 100%;"></div>
+<p class="text-xs font-bold text-primary">Apr</p>
+</div>
+<div class="flex flex-col items-center w-full gap-2">
+<div class="bg-primary/30 dark:bg-primary/50 rounded w-full" style="height: 90%;"></div>
+<p class="text-xs font-bold text-black/50 dark:text-white/50">May</p>
+</div>
+<div class="flex flex-col items-center w-full gap-2">
+<div class="bg-primary/30 dark:bg-primary/50 rounded w-full" style="height: 70%;"></div>
+<p class="text-xs font-bold text-black/50 dark:text-white/50">Jun</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-bold text-black dark:text-white mb-4">Financial Reports</h2>
+<div class="space-y-4">
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-lg flex justify-between items-center">
+<p class="text-sm font-medium text-black/70 dark:text-white/70">Total Service Fees Paid</p>
+<p class="text-lg font-bold text-black dark:text-white">$250</p>
+</div>
+<div class="bg-primary/10 dark:bg-primary/20 p-4 rounded-lg flex justify-between items-center">
+<p class="text-sm font-medium text-black/70 dark:text-white/70">Total Sales Revenue</p>
+<p class="text-lg font-bold text-black dark:text-white">$500</p>
+</div>
+<div class="bg-primary/20 dark:bg-primary/30 p-4 rounded-lg flex justify-between items-center">
+<p class="text-sm font-bold text-black dark:text-white">Net Savings/Profits</p>
+<p class="text-xl font-bold text-primary">$250</p>
+</div>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-bold text-black dark:text-white mb-4">Export Reports</h2>
+<div class="grid grid-cols-2 gap-4">
+<button class="w-full h-12 rounded-lg bg-primary text-black font-bold text-sm">Export PDF</button>
+<button class="w-full h-12 rounded-lg bg-primary/20 dark:bg-primary/30 text-black dark:text-white font-bold text-sm">Export Excel</button>
+</div>
+</section>
+</main>
+<footer class="sticky bottom-0 border-t border-primary/20 bg-background-light dark:bg-background-dark pb-safe">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center gap-1 text-black/60 dark:text-white/60" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path></svg>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-black/60 dark:text-white/60" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,16V152h-28.7A15.86,15.86,0,0,0,168,156.69L148.69,176H107.31L88,156.69A15.86,15.86,0,0,0,76.69,152H48V48Zm0,160H48V168H76.69L96,187.31A15.86,15.86,0,0,0,107.31,192h41.38A15.86,15.86,0,0,0,160,187.31L179.31,168H208v40Z"></path></svg>
+<span class="text-xs font-medium">Services</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-black/60 dark:text-white/60" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M232,96a7.89,7.89,0,0,0-.3-2.2L217.35,43.6A16.07,16.07,0,0,0,202,32H54A16.07,16.07,0,0,0,38.65,43.6L24.31,93.8A7.89,7.89,0,0,0,24,96v16a40,40,0,0,0,16,32v64a16,16,0,0,0,16,16H200a16,16,0,0,0,16-16V144a40,40,0,0,0,16-32ZM54,48H202l11.42,40H42.61Zm50,56h48v8a24,24,0,0,1-48,0Zm-16,0v8a24,24,0,0,1-48,0v-8ZM200,208H56V151.2a40.57,40.57,0,0,0,8,.8,40,40,0,0,0,32-16,40,40,0,0,0,64,0,40,40,0,0,0,32,16,40.57,40.57,0,0,0,8-.8Zm-8-72a24,24,0,0,1-24-24v-8h48v8A24,24,0,0,1,192,136Z"></path></svg>
+<span class="text-xs font-medium">Marketplace</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M230.93,220a8,8,0,0,1-6.93,4H32a8,8,0,0,1-6.92-12c15.23-26.33,38.7-45.21,66.09-54.16a72,72,0,1,1,73.66,0c27.39,8.95,50.86,27.83,66.09,54.16A8,8,0,0,1,230.93,220Z"></path></svg>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

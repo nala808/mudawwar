@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mudawwar - Transactions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#38e07b",
+            "background-light": "#f6f8f7",
+            "background-dark": "#122017",
+          },
+          fontFamily: {
+            "display": ["Manrope"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-black dark:text-white">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="p-2 -ml-2">
+<span class="material-symbols-outlined text-black dark:text-white">arrow_back_ios_new</span>
+</button>
+<h1 class="flex-1 text-lg font-bold text-center text-black dark:text-white">Transactions</h1>
+<div class="w-8"></div> 
+</div>
+<div class="px-4 pb-4 flex items-center space-x-2 overflow-x-auto">
+<button class="flex items-center justify-center h-10 px-4 space-x-2 text-sm font-medium rounded-full bg-primary/20 dark:bg-primary/30 text-black dark:text-white">
+<span>Type</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+<button class="flex items-center justify-center h-10 px-4 space-x-2 text-sm font-medium rounded-full bg-primary/20 dark:bg-primary/30 text-black dark:text-white">
+<span>Date</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+<button class="flex items-center justify-center h-10 px-4 space-x-2 text-sm font-medium rounded-full bg-primary/20 dark:bg-primary/30 text-black dark:text-white">
+<span>Status</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</button>
+</div>
+</header>
+<main class="flex-1 px-4 py-2 space-y-4">
+<a class="flex items-center p-3 transition-all duration-200 ease-in-out bg-white rounded-lg shadow-sm dark:bg-black/20 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<img alt="Scrap Metal" class="w-14 h-14 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcVkuN_btYcEFDqyiFr8Ya17_7VYQSQqvtVxGb7L7sKGGlO8D9F7vs_bcm31ivMqypWr6gD0K7iN0q8aR8cE36NtLEzeey5PO0aPDZsBAFiLKDvU2W6PueIPPSgmhD53qUv2M2yxxjHkTVb223xJ_TRVEC94oRmyWCMq5wU9DSa6Y08oiQsOtF64zuzS74dHUTLsL3fVZyNy6JQAW_zs212kiwHqW8itfRbaYz25vntkSRZv3QKqTB9EKj8Eo1XGhl0OG3bG57"/>
+<div class="flex-1 ml-4">
+<div class="flex items-center justify-between">
+<p class="font-bold text-black dark:text-white">Scrap Metal Sale</p>
+<p class="font-bold text-primary">$50.00</p>
+</div>
+<div class="flex items-center justify-between mt-1 text-sm text-black/60 dark:text-white/60">
+<p>10 kg</p>
+<span class="px-2 py-0.5 text-xs font-semibold text-green-800 bg-green-200 rounded-full">Completed</span>
+</div>
+</div>
+</a>
+<a class="flex items-center p-3 transition-all duration-200 ease-in-out bg-white rounded-lg shadow-sm dark:bg-black/20 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<img alt="Organic Waste" class="w-14 h-14 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBx6f3r2PctKquQgrV28O-H0PXDefDG-2bdlabaYn5auHxAxnYEF4VLUE26_q84BdY3XA0bp3GCRIBhZ7qx2DFCOvyFh1o6pwix2UDLjmWQeYCgb99E1ujLsSh6D0Mf0L4VZCgOrBOhObzybsdDedvKHAQJe47hdNbZtb2UwMuWik8UQVurhgvfG8EBqLnbPjki8qdJerLhwJo5MBJ9qb5uicL8LbMFSjNMCLgmWUp0g5KmDhCUk1kWZpiBvFDDj-7LNVwY-zem"/>
+<div class="flex-1 ml-4">
+<div class="flex items-center justify-between">
+<p class="font-bold text-black dark:text-white">Organic Waste Collection</p>
+<p class="font-bold text-primary">$20.00</p>
+</div>
+<div class="flex items-center justify-between mt-1 text-sm text-black/60 dark:text-white/60">
+<p>20 kg</p>
+<span class="px-2 py-0.5 text-xs font-semibold text-yellow-800 bg-yellow-200 rounded-full">In Process</span>
+</div>
+</div>
+</a>
+<a class="flex items-center p-3 transition-all duration-200 ease-in-out bg-white rounded-lg shadow-sm dark:bg-black/20 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<img alt="Plastic Recycling" class="w-14 h-14 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArPdiJax9dRxLiUBkHxGvnuUX64WngWu6e7uiJ-3dme-eoMdM06LQZWpBwHIRBXC5P0FBhg36x_4WtjVpsVMUhw6Ect60ahYGTUew4wfRYRnqL2FtMinhN9AX5egIG5E7wDgTc_yJgApRh0rYAJT8zJMHZkmu-NpodAmk1hHRpdD8x-tjYuVyvjcswtTa2gurFoan7j8vNfiCvyw34xZtTtW8ojoVEX689F4DaZZJn3OV3UMWXCzJZh4pS0P6NQC9hECxJbtpW"/>
+<div class="flex-1 ml-4">
+<div class="flex items-center justify-between">
+<p class="font-bold text-black dark:text-white">Plastic Recycling</p>
+<p class="font-bold text-primary">$30.00</p>
+</div>
+<div class="flex items-center justify-between mt-1 text-sm text-black/60 dark:text-white/60">
+<p>15 kg</p>
+<span class="px-2 py-0.5 text-xs font-semibold text-green-800 bg-green-200 rounded-full">Completed</span>
+</div>
+</div>
+</a>
+<a class="flex items-center p-3 transition-all duration-200 ease-in-out bg-white rounded-lg shadow-sm dark:bg-black/20 hover:bg-primary/10 dark:hover:bg-primary/20" href="#">
+<img alt="Scrap Metal" class="w-14 h-14 rounded-lg object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAWOBSPYPDa8Vs_ZSGdWmKeJZcOLv1h4DGN9lKdh-qaPmJRcZ6NsxTPhT0pMnOhghRiDf8kfFTvpxDhlwkc7hWbqo_S3B8KGTGlu8JUolGVS7cAhLISi3mKtazVM86RuSAUTtRGfui9tvtz-lBXFbhMBMQZPpmQ8Zq_ttqjqtP3N7hOA3El54s4IgOj3E-kFTWYHgArrfR0Zij9yfhU9u2LwQ-nekylVNY__NiLAapNuTpDZANmH4gWCZ6By8Jk0_VdN_Db330g"/>
+<div class="flex-1 ml-4">
+<div class="flex items-center justify-between">
+<p class="font-bold text-black dark:text-white">Scrap Metal Sale</p>
+<p class="font-bold text-primary">$50.00</p>
+</div>
+<div class="flex items-center justify-between mt-1 text-sm text-black/60 dark:text-white/60">
+<p>10 kg</p>
+<span class="px-2 py-0.5 text-xs font-semibold text-green-800 bg-green-200 rounded-full">Completed</span>
+</div>
+</div>
+</a>
+</main>
+<footer class="sticky bottom-0 z-10 border-t bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-sm border-black/10 dark:border-white/10">
+<nav class="flex items-center justify-around px-4 pt-2 pb-4">
+<a class="flex flex-col items-center flex-1 gap-1 text-black/60 dark:text-white/60" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center flex-1 gap-1 text-black/60 dark:text-white/60" href="#">
+<span class="material-symbols-outlined">recycling</span>
+<span class="text-xs font-medium">Services</span>
+</a>
+<a class="flex flex-col items-center flex-1 gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">storefront</span>
+<span class="text-xs font-bold">Marketplace</span>
+</a>
+<a class="flex flex-col items-center flex-1 gap-1 text-black/60 dark:text-white/60" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

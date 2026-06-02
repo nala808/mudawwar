@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mudawwar - User Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Cairo:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#38e07b",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#122017",
+                        "text-light": "#0e1a13",
+                        "text-dark": "#e8f2ec",
+                        "subtext-light": "#51946c",
+                        "subtext-dark": "#a3d3b8",
+                        "border-light": "#d1e6d9",
+                        "border-dark": "#3a4a40",
+                        "card-light": "#ffffff",
+                        "card-dark": "#1a2c21"
+                    },
+                    fontFamily: {
+                        "display": ["Cairo", "Manrope", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="max-w-md mx-auto">
+<header class="flex items-center justify-between p-4 sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<div>
+<h1 class="text-2xl font-bold">مرحباً مطعم هاشم</h1>
+<p class="text-sm text-subtext-light dark:text-subtext-dark">نظرة عامة على حسابك</p>
+</div>
+<button class="p-2">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">notifications</span>
+</button>
+</header>
+<main class="p-4 space-y-6 pb-32">
+<section>
+<button class="w-full bg-primary text-background-dark font-bold py-4 px-4 rounded-xl shadow-lg hover:bg-primary/90 transition-colors flex items-center justify-center text-lg">
+<span class="material-symbols-outlined mr-2">add_circle</span>
+                اطلب خدمة جمع النفايات
+            </button>
+</section>
+<section class="space-y-4">
+<h2 class="text-lg font-bold">ملخص آخر عملية جمع</h2>
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-xl shadow-sm space-y-4">
+<div class="flex justify-between items-center">
+<p class="text-sm text-subtext-light dark:text-subtext-dark">التاريخ</p>
+<p class="font-medium">٢٥ أكتوبر ٢٠٢٣</p>
+</div>
+<div class="flex justify-between items-center">
+<p class="text-sm text-subtext-light dark:text-subtext-dark">الكمية</p>
+<p class="font-medium">١٥٠ كجم</p>
+</div>
+<div class="flex justify-between items-center">
+<p class="text-sm text-subtext-light dark:text-subtext-dark">حالة الدفع</p>
+<span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full dark:bg-green-900 dark:text-green-300">مدفوع</span>
+</div>
+</div>
+</section>
+<section class="space-y-4">
+<h2 class="text-lg font-bold">الأثر البيئي</h2>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-xl shadow-sm text-center">
+<p class="text-sm text-subtext-light dark:text-subtext-dark">إجمالي النفايات العضوية المحولة</p>
+<div class="flex items-center justify-center space-x-2 mt-2">
+<span class="material-symbols-outlined text-primary text-5xl">compost</span>
+<p class="text-4xl font-bold text-primary">١.٢ طن</p>
+</div>
+<p class="text-xs text-subtext-light dark:text-subtext-dark mt-2">منذ بداية ٢٠٢٣</p>
+</div>
+</section>
+<section class="space-y-4">
+<h2 class="text-lg font-bold">الإشعارات السريعة</h2>
+<div class="bg-card-light dark:bg-card-dark rounded-xl shadow-sm divide-y divide-border-light dark:divide-border-dark">
+<div class="p-4 flex items-start space-x-3 rtl:space-x-reverse">
+<div class="bg-blue-100 dark:bg-blue-900 p-2 rounded-full">
+<span class="material-symbols-outlined text-blue-600 dark:text-blue-300 text-xl">calendar_month</span>
+</div>
+<div>
+<p class="font-medium">تم جدولة عملية الجمع التالية ليوم ٢٨ أكتوبر.</p>
+<p class="text-xs text-subtext-light dark:text-subtext-dark">قبل يوم واحد</p>
+</div>
+</div>
+<div class="p-4 flex items-start space-x-3 rtl:space-x-reverse">
+<div class="bg-primary/20 dark:bg-primary/10 p-2 rounded-full">
+<span class="material-symbols-outlined text-primary text-xl">workspace_premium</span>
+</div>
+<div>
+<p class="font-medium">لقد ربحت ٥٠ نقطة جديدة! رصيدك الآن ١٣٠٠ نقطة.</p>
+<p class="text-xs text-subtext-light dark:text-subtext-dark">قبل ٣ أيام</p>
+</div>
+</div>
+<div class="p-4 flex items-start space-x-3 rtl:space-x-reverse">
+<div class="bg-yellow-100 dark:bg-yellow-900 p-2 rounded-full">
+<span class="material-symbols-outlined text-yellow-600 dark:text-yellow-300 text-xl">lightbulb</span>
+</div>
+<div>
+<p class="font-medium">نصيحة: يمكنك استبدال نقاطك بخصومات على الخدمات.</p>
+<p class="text-xs text-subtext-light dark:text-subtext-dark">قبل أسبوع</p>
+</div>
+</div>
+<button class="w-full text-primary font-bold py-3 text-sm">عرض كل الإشعارات</button>
+</div>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-background-light dark:bg-background-dark border-t border-border-light dark:border-border-dark">
+<div class="flex justify-around items-center px-4 py-2">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">dashboard</span>
+<span class="text-xs font-bold">الرئيسية</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-subtext-light dark:text-subtext-dark" href="#">
+<span class="material-symbols-outlined">history</span>
+<span class="text-xs">السجل</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-subtext-light dark:text-subtext-dark" href="#">
+<span class="material-symbols-outlined">workspace_premium</span>
+<span class="text-xs">المكافآت</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-subtext-light dark:text-subtext-dark" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs">الملف الشخصي</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

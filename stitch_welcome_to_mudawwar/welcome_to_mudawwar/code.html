@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Mudawwar</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#38e07b",
+                        "background-light": "#f6f8f7",
+                        "background-dark": "#122017",
+                    },
+                    fontFamily: {
+                        "display": ["Manrope"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex flex-col flex-grow">
+<header class="flex items-center p-4">
+<div class="flex-1"></div>
+<h1 class="flex-1 text-center text-lg font-bold text-background-dark dark:text-background-light">Mudawwar</h1>
+<div class="flex flex-1 justify-end">
+<button class="flex items-center justify-center rounded-full h-10 w-10 text-background-dark dark:text-background-light">
+<span class="material-symbols-outlined">language</span>
+</button>
+</div>
+</header>
+<main class="flex flex-col items-center justify-center flex-grow px-4 text-center">
+<div class="space-y-4">
+<h2 class="text-3xl font-extrabold text-background-dark dark:text-background-light">Welcome to Mudawwar</h2>
+<p class="text-base text-background-dark/70 dark:text-background-light/70 max-w-sm mx-auto">
+                        Join us in our vision for a circular economy in Jordan
+                    </p>
+</div>
+<div class="w-full max-w-md mt-10 space-y-4">
+<a class="block w-full rounded-lg bg-primary py-4 text-center text-base font-bold text-background-dark" href="#">
+                        Organic Waste Management
+                    </a>
+<a class="block w-full rounded-lg bg-primary/20 dark:bg-primary/20 py-4 text-center text-base font-bold text-background-dark dark:text-background-light" href="#">
+                        Industrial Waste Marketplace
+                    </a>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-primary/20 dark:border-primary/20">
+<nav class="flex justify-around py-2">
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-background-dark/50 dark:text-background-light/50" href="#">
+<span class="material-symbols-outlined">recycling</span>
+<span class="text-xs font-medium">Services</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-background-dark/50 dark:text-background-light/50" href="#">
+<span class="material-symbols-outlined">storefront</span>
+<span class="text-xs font-medium">Marketplace</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-background-dark/50 dark:text-background-light/50" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+<div class="h-safe-area-bottom bg-background-light dark:bg-background-dark"></div>
+</footer>
+</div>
+
+</body></html>
